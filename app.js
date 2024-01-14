@@ -7,7 +7,7 @@ function Book(title, author, pages, read = null) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.read = ;
+  // this.read = ;
   allBooks.push(this);
 }
 Book.prototype.read = function(){
