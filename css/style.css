@@ -1,0 +1,35 @@
+:root{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex
+}
+#books-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    border: 1px solid blue;
+    /* height: clamp(150px, 35vh, 400px); */
+    height: 275px;
+    width: 175px;
+    margin: 10px;
+    padding: 15px;
+}
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+    /* margin: 5px; */
+    padding: 5px;
+}
+h4{
+    font-size: 1.5rem;
+    margin: 5px;
+    font-weight: 600;
+}

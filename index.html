@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
 </head>
 <body>
     <header></header>
     <main>
-        <section class="book-case"></section>
+        <section class="modal hidden">
+            <div class="flex">
+               <img src="user.png" width="50px" height="50px" alt="user" />
+               <button class="btn-close">⨉</button>
+            </div>
+            <div>
+                <h3>Stay in touch</h3>
+                <p>
+                  This is a dummy newsletter form so don't bother trying to test it. Not
+                  that I expect you to, anyways. 
+                </p>
+            </div>
+            
+            <input type="email" id="email" placeholder="brendaneich@js.com" />
+            <button class="btn">Submit</button>
+        </section>
+        <div class="overlay hidden"></div>
+        <div>
+            <button class="btn btn-open" id="new-book">New Book</button>
+        </div>
+        <section id="books-container"></section>
     </main>
     <footer></footer>
 </body>
